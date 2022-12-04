@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mia - Ghost Rain</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header><img src="images/ghost-line.png"> Ghost Rain <img src="images/ghost-line.png"></header>
+    <div class="contents">
+      <div class="side">
+        <div class="innerSide">
+          <p style="font-size: 40px;">Ranking</p>
+          <div>
+            <p><img src="images/crown.png">1. Mia</p>
+            <p><img src="images/crown.png">2. Andy</p>
+            <p><img src="images/crown.png">3. </p>
+            <p><img src="images/crown.png">4. </p>
+            <p><img src="images/crown.png">5. </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="gameDisplay">
+        <div class = "displayTop">
+          <div style="display: flex; align-items: center;"><img width="32px" height="32px" src="images/clock.png"><p id="setTime">10</p></div>
+          <div><img src="images/bone-solid.png"><img src="images/bone-solid.png"><img src="images/bone-solid.png"></div>
+        </div>
+        <div id="bg">
+          <div id="hero"></div>
+        </div>
+      </div>
+
+      <div class="side">
+        <div class="innerSide">
+            <div>
+              <p>배경</p>
+              <button>-</button><input type="text" value="3"></input><button>+</button>
+              <p>효과</p>
+              <button>-</button><input type="text" value="3"></input><button>+</button>
+              <p>속도</p>
+              <button>-</button><input type="text" value="3"></input><button>+</button>
+            </div>
+            <button class="start" onclick="timer(), startRain(), stopRain()">start</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Directed by. Mia</p>
+    </footer>
+    <script src="js/settings.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/ghost.js"></script>
+    <script src="js/hero.js"></script>
+
+   
+  </body>
+</html>

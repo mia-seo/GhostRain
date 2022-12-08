@@ -4,6 +4,12 @@
   font-family: "Black And White Picture", sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 header {
   width: 700px;
   height: 80px;
@@ -16,11 +22,20 @@ header {
   padding-top: 12px;
 }
 
+#playBtn {
+  width: 35px;
+  display: none;
+}
+
+#playBtn:hover {
+  cursor: pointer;
+}
+
 .contents {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
-  width: 1400px;
+  width: 100vw;
   height: 550px;
 }
 
@@ -59,6 +74,36 @@ header {
   position: relative;
 }
 
+#ghostRainStart {
+  width: 800px;
+  height: 500px;
+  background-image: url(images/ghostRainStart.jpeg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-size: 42px;
+  color: white;
+}
+
+#greeting {
+  font-size: 45px;
+  margin: 0;
+}
+
+form > input {
+  width: 300px;
+}
+
+#readyBtn {
+  width: 200px;
+}
+
 input {
   width: 50px;
 }
@@ -87,16 +132,14 @@ input {
 footer {
   width: 100vw;
   height: 8vh;
-  position: fixed;
-  bottom: 0;
   background-color: black;
   color: white;
+  text-align: end;
 }
 
 footer > p {
-  position: absolute;
-  bottom: 0px;
-  right: 30px;
+  margin: 0;
+  padding: 12px 30px;
 }
 
 #hero {
@@ -123,4 +166,27 @@ footer > p {
 
 input {
   text-align: center;
+}
+
+@media screen and (max-width: 1360px) and (min-width: 1000px) {
+  #ranking {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .side {
+    display: none;
+  }
+
+  #playBtn {
+    display: block;
+    position: absolute;
+    right: 2vw;
+    top: 7vh;
+  }
+}
+
+.hidden {
+  display: none;
 }

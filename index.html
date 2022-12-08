@@ -10,8 +10,9 @@
   </head>
   <body>
     <header><img src="images/ghost-line.png"> Ghost Rain <img src="images/ghost-line.png"></header>
+    <img id="playBtn" onclick="timer(), startRain(), stopRain()" src="./images/play-button.png">
     <div class="contents">
-      <div class="side">
+      <div class="side" id="ranking">
         <div class="innerSide">
           <p style="font-size: 40px;">Ranking</p>
           <div>
@@ -27,14 +28,30 @@
       <div class="gameDisplay">
         <div class = "displayTop">
           <div style="display: flex; align-items: center;"><img width="32px" height="32px" src="images/clock.png"><p id="setTime">10</p></div>
-          <div><img src="images/bone-solid.png"><img src="images/bone-solid.png"><img src="images/bone-solid.png"></div>
+          <div><img src="./images/knife-blood-line.png"> killed Ghost :  <span id="killedGhost">0</span> </div>
         </div>
-        <div id="bg">
+        <div id="bg" class="hidden">
           <div id="hero"></div>
         </div>
+        <div id="ghostRainStart">
+          <h3>GhostRain</h3>
+          <form id="getName">
+            <input id="nameInput" type="text" placeholder="Who are you?" required>
+            <p id="greeting" class="hidden"></p>
+          </form>
+          <p style="margin-bottom: 0;">How to Play?</p>
+          <p>--> Just Kill Ghost with your "<" & ">" key. </p>
+          <button id="readyBtn">Are you ready?</button>
+        </div>
+        <!-- <div id="ghostRainEnd">
+          <p>Well Done <span></span>!</p>
+          <p>You killed <span></span>ghosts!</p>
+          <p>Do you want to play more?</p>
+          <button>Yes!</button>
+        </div> -->
       </div>
 
-      <div class="side">
+      <div class="side" id="setting">
         <div class="innerSide">
             <div>
               <p>배경</p>
@@ -52,10 +69,12 @@
       <p>Directed by. Mia</p>
     </footer>
     <script src="js/settings.js"></script>
+    <script src="js/greeting.js"></script>
     <script src="js/init.js"></script>
     <script src="js/ghost.js"></script>
     <script src="js/hero.js"></script>
+    <script src="js/gameEnd.js"></script>
+    <script src="js/bgm.js"></script>
 
-   
   </body>
 </html>

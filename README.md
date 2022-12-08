@@ -4,7 +4,7 @@
 키보드 이벤트를 사용한 유령잡기 게임입니다.
 
 ## 📚 참고
-WECODE <GhostRain>
+WECODE GhostRain
 
 ## ⚙️ 테크
 @VanillaJavaScript
@@ -13,6 +13,7 @@ WECODE <GhostRain>
 - 키보드 방향키 입력에 따른 용사 이동 및 보여지는 모습 변경.
 - setInterval과 setTimeout을 활용한 유령비 내리기.
 - 용사의 위치와 유령의 위치의 접점을 이용한 유령 잡기.
+
 
 ## 💡 발전 예정인 기능
 - 게임 시작화면에서 유저 이름 받아 이름 저장. -->> ok (22.12.08)

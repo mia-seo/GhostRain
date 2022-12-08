@@ -3,8 +3,8 @@
 ## 🖥️ 프로젝트 소개
 키보드 이벤트를 사용한 유령잡기 게임입니다.
 
-## 📚 
-위코드 고스트레인
+## 📚 참고
+WECODE <GhostRain>
 
 ## ⚙️ 테크
 @VanillaJavaScript

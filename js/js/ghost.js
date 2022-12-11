@@ -1,4 +1,5 @@
 function createGhost() {
+  const speed = document.getElementById("speed");
   const ghostElement = document.createElement("div");
   const ghostStyle = ghostElement.style;
   ghostStyle.position = "absolute";
@@ -58,10 +59,18 @@ function die(ghostElement) {
 let ghostRainId = null;
 
 function startRain() {
-  ghostRainId = setInterval(createGhost, 1000);
-  const bgm = new Audio("./audio/bgm.mp3");
-  bgm.play();
-  setTimeout(() => bgm.pause(), 11000);
+  ghostRainId = setInterval(createGhost, 800);
+  const sound = new Audio("./audio/bgm.mp3");
+  const bgmBar = document.getElementById("bgm");
+  sound.play();
+  setTimeout(() => sound.pause(), 11000);
+
+  function onChangeBgm(event) {
+    const bgmValue = event.target.value;
+    sound.volume = bgmValue;
+  }
+
+  bgmBar.addEventListener("change", onChangeBgm);
   killedGhost.innerHTML = 0;
 }
 

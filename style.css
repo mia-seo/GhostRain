@@ -129,6 +129,17 @@ input {
   justify-content: space-around;
 }
 
+#ranges {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#ranges input {
+  width: 100px;
+}
+
 footer {
   width: 100vw;
   height: 8vh;
